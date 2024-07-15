@@ -1,5 +1,6 @@
 runtime: python
 env: flex
+entrypoint: mesop Jin-chan_chatbot.py
 
 automatic_scaling:
   min_num_instances: 1  # Minimum number of instances to keep running
