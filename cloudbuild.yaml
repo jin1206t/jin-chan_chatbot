@@ -14,5 +14,6 @@ steps:
       - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
   logging: CLOUD_LOGGING_ONLY
+  verbosity: 'debug'
 
 # memo for trigger only
