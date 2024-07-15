@@ -1,14 +1,16 @@
 steps:
-  - name: "gcr.io/cloud-builders/gcloud"
+  - name: 'gcr.io/cloud-builders/gcloud'
     args:
-      - "app"
-      - "deploy"
-      - "path/to/your/app.yaml"
-      - "--version=your-version"
+      - 'app'
+      - 'deploy'
+      - 'path/to/your/app.yaml'
+      - '--version=your-version'
+      - '--project=your-project-id'
+      - '--quiet'
+      - '--no-promote'
+      - '--stop-previous-version'
     env:
-      - "CLOUDSDK_COMPUTE_ZONE=your-compute-zone"
-      - "CLOUDSDK_CORE_PROJECT=your-project-id"
+      - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
+      - 'CLOUDSDK_CORE_PROJECT=your-project-id'
 options:
-  logging: CLOUD_LOGGING_ONLY
-  substitution_option: ALLOW_LOOSE
-
+  logging: NONE
