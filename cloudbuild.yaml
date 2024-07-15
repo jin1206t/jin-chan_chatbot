@@ -8,3 +8,7 @@ steps:
     env:
       - "CLOUDSDK_COMPUTE_ZONE=your-compute-zone"
       - "CLOUDSDK_CORE_PROJECT=your-project-id"
+options:
+  logging: CLOUD_LOGGING_ONLY
+  substitution_option: ALLOW_LOOSE
+
