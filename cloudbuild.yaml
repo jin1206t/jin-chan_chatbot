@@ -9,6 +9,10 @@ steps:
       - '--quiet'  # Optional: to skip prompts during deployment
       - '--no-promote'  # Optional: to deploy without setting as default version
       - '--stop-previous-version'  # Optional: to stop the previously deployed version
-
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=asia-east1'
+      - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
-  logging: CLOUD_Logging_only
+  logging: CLOUD_LOGGING_ONLY
+
+# memo for trigger only
