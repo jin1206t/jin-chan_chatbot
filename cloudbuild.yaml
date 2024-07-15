@@ -1,0 +1,10 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - "app"
+      - "deploy"
+      - "path/to/your/app.yaml"
+      - "--version=your-version"
+    env:
+      - "CLOUDSDK_COMPUTE_ZONE=your-compute-zone"
+      - "CLOUDSDK_CORE_PROJECT=your-project-id"
