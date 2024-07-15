@@ -6,7 +6,7 @@ steps:
       - './app.yaml'  # Path to your app.yaml file
       - '--version=your-version'  # Replace with your desired version name
       - '--project=$PROJECT_ID'  # Automatically substitutes with your project ID
-      - '--quiet'  # Optional: to skip prompts during deployment
+      - #'--quiet'  # Optional: to skip prompts during deployment
       - '--no-promote'  # Optional: to deploy without setting as default version
       - '--stop-previous-version'  # Optional: to stop the previously deployed version
     env:
@@ -14,6 +14,4 @@ steps:
       - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
   logging: CLOUD_LOGGING_ONLY
-  verbosity: 'debug'
 
-# memo for trigger only
