@@ -11,6 +11,6 @@ steps:
       - '--stop-previous-version'
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
-      - 'CLOUDSDK_CORE_PROJECT=your-project-id'
+      - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
   logging: NONE
