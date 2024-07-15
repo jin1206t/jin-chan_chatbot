@@ -13,6 +13,6 @@ steps:
       - 'CLOUDSDK_COMPUTE_ZONE=asia-east1'
       - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY
 
 # memo for trigger only
