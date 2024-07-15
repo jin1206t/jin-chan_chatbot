@@ -3,16 +3,12 @@ steps:
     args:
       - 'app'
       - 'deploy'
-      - 'path/to/your/app.yaml'
-      - '--version=your-version'
-      - '--project=your-project-id'
-      - '--quiet'
-      - '--no-promote'
-      - '--stop-previous-version'
-    env:
-      - 'CLOUDSDK_COMPUTE_ZONE=asia-east1'
-      - 'CLOUDSDK_CORE_PROJECT=jintestfree'
-options:
-  logging: CLOUD_LOGGING_ONLY
+      - './app.yaml'  # Path to your app.yaml file
+      - '--version=your-version'  # Replace with your desired version name
+      - '--project=$PROJECT_ID'  # Automatically substitutes with your project ID
+      - '--quiet'  # Optional: to skip prompts during deployment
+      - '--no-promote'  # Optional: to deploy without setting as default version
+      - '--stop-previous-version'  # Optional: to stop the previously deployed version
 
-# memo for trigger only
+options:
+  logging: CLOUD_Logging_only
