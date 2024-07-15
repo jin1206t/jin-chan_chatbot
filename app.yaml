@@ -1,4 +1,4 @@
-runtime: python310
+runtime: python
 env: flex
 
 automatic_scaling:

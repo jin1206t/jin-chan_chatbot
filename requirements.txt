@@ -4,7 +4,7 @@
 # Jinja2==3.1.4
 # Markdown==3.6
 # MarkupSafe==2.1.5
-mesop==0.9.4
+# mesop==0.9.4
 # msgpack==1.0.8
 # ordered-set==4.1.0
 # protobuf==5.27.2
