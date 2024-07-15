@@ -1,13 +1,11 @@
 runtime: python
 env: flex
 
+automatic_scaling:
+  target_cpu_utilization: 0.65  # Adjust based on your application's CPU needs
+  min_num_instances: 1  # Minimum number of instances to keep running
+  max_num_instances: 5  # Maximum number of instances that can be created
+
 handlers:
   - url: /.*
     script: auto
-
-automatic_scaling:
-  min_instances: 1
-  max_instances: 1
-  cool_down_period_sec: 60
-  cpu_utilization:
-    target_utilization: 0.65
