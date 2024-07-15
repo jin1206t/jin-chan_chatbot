@@ -10,7 +10,7 @@ steps:
       - '--no-promote'
       - '--stop-previous-version'
     env:
-      - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
+      - 'CLOUDSDK_COMPUTE_ZONE=asia-east1'
       - 'CLOUDSDK_CORE_PROJECT=jintestfree'
 options:
   logging: NONE
